@@ -57,7 +57,7 @@ if county_name not in counties:
 
 •	Breakdown of votes each candidate received:
 | Candidate	              | Percentage of Votes	| Total # of Votes |
-------------------------------------------------------
+--------------------------------------------------------------------
 | Charles Casper Stockham	| 23%	                | 85,213           |
 | Diana DeGette	          | 73.8%	              | 272,892          |
 | Raymon Anthony Doane    |   3.1%	            | 11,606           |
