@@ -35,6 +35,7 @@ The analysis of the election show that:
 ## Election-Audit Results:
 There was a total of 369,711 votes cast in this congressional election.  Sample of code used to obtain total votes was:        
  #Add to the total vote count
+ 
         total_votes = total_votes + 1
         
 •	Breakdown of votes by county
@@ -47,11 +48,17 @@ There was a total of 369,711 votes cast in this congressional election.  Sample 
 The following excerpt from the code was used to obtain the number of votes by county and as well as candidate votes with a simple modification of the keywords used for county vs candidate. 
 
 if county_name not in counties:
+
             #Add the existing county to the list of counties
+            
            counties.append(county_name)
+           
             #Begin tracking the county's vote count.
+            
             county_votes[county_name] = 0
+            
    #Add a vote to that county's vote count.
+   
             county_votes[county_name] += 1
             
 •	Denver had the largest number of votes at 306,055.
@@ -67,18 +74,29 @@ if county_name not in counties:
 
 The following is an example of the code used to obtain the percentage of votes from each county.
 #Retrieve the county vote count.
+
 county_count = county_votes.get(county)
+
 #Calculate the percent of total votes for the county.
+
 county_percentage = float(county_count) / float(total_votes) * 100
+
 county_results = (f"{county_name}: {county_percentage:.1f}% ({county_count:,})\n")
 
 #Print the county results to the terminal.
+
 print(county_results)
+
 #Save the county votes to a text file.
+
 txt_file.write(county_results)
+
 #Write a decision statement to determine the winning county and get its vote count.
+
 if (county_count > largest_votes):
+
 largest_votes = county_count
+
 largest_turnout = county
 
 ## Challenge Summary
