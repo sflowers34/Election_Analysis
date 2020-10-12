@@ -39,6 +39,7 @@ There was a total of 369,711 votes cast in this congressional election.  Sample 
         
 •	Breakdown of votes by county
 | County | Percentage of Votes | Total # of Votes |
+| :---: | :---: | :---|
 | Jefferson	| 10.5%	| 38,855 |
 |Denver	| 82.8% | 306,055 |
 | Arapahoe | 6.7%	| 24,801 |
@@ -56,8 +57,8 @@ if county_name not in counties:
 •	Denver had the largest number of votes at 306,055.
 
 •	Breakdown of votes each candidate received:
-| Candidate	              | Percentage of Votes	| Total # of Votes |
---------------------------------------------------------------------
+| Candidate| Percentage of Votes| Total # of Votes |
+| :---: | :---: | :---|
 | Charles Casper Stockham	| 23%	                | 85,213           |
 | Diana DeGette	          | 73.8%	              | 272,892          |
 | Raymon Anthony Doane    |   3.1%	            | 11,606           |
