@@ -16,14 +16,17 @@ A Colorado Board of Elections employee has given me the following tasks to compl
 ## Summary
 The analysis of the election show that:
 - There were 369,711 votes cast in the election. 
+
 - The candidates were:
   - Diana DeGette
   - Charles Casper Stockham
   - Raymon Anthony Doane
+  
 - The candidate results were:
   - Charles Casper Stockham received 23% of the vote and 85,213 number of votes.
   - Diana DeGette received 73.8% of the vote and 272,892 number of votes. 
   - Raymon Anthony Doane received 3.1% of the votes and 11,606 number of votes. 
+  
 - The winner of the election was:
    -Diana DeGette, who received 73.8% of the vote and 272,892 number of votes.
    
@@ -36,12 +39,9 @@ There was a total of 369,711 votes cast in this congressional election.  Sample 
         
 •	Breakdown of votes by county
 | County | Percentage of Votes | Total # of Votes |
-| :---: | :---:| :---|
 | Jefferson	| 10.5%	| 38,855 |
-| :---: | :---:| :---|
 |Denver	| 82.8% | 306,055 |
-| :---: | :---:| :---|
-| Arapahoe | 6.7%	| 24,801|
+| Arapahoe | 6.7%	| 24,801 |
 
 The following excerpt from the code was used to obtain the number of votes by county and as well as candidate votes with a simple modification of the keywords used for county vs candidate. 
 
@@ -56,10 +56,10 @@ if county_name not in counties:
 •	Denver had the largest number of votes at 306,055.
 
 •	Breakdown of votes each candidate received:
-Candidate	Percentage of Votes	Total # of Votes
-Charles Casper Stockham	23%	85,213
-Diana DeGette	73.8%	272,892
-Raymon Anthony Doane	3.1%	11,606
+| Candidate	| Percentage of Votes	| Total # of Votes |
+| Charles Casper Stockham	| 23%	| 85,213 |
+| Diana DeGette	| 73.8%	| 272,892 |
+| Raymon Anthony Doane | 3.1%	| 11,606 |
 
 •	Diana DeGette won the election with 272,892 votes, which was 73.8% of the total votes tallied by all counties. 
 
