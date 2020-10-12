@@ -28,18 +28,20 @@ The analysis of the election show that:
    -Diana DeGette, who received 73.8% of the vote and 272,892 number of votes.
    
  ## Challenge Overview
- ## Overview of Election Audit:
 
 ## Election-Audit Results:
 There was a total of 369,711 votes cast in this congressional election.  Sample of code used to obtain total votes was:        
- # Add to the total vote count
+ #Add to the total vote count
         total_votes = total_votes + 1
         
 •	Breakdown of votes by county
-County	Percentage of Votes	Total # of Votes
-Jefferson	10.5%	38,855
-Denver	82.8%	306,055
-Arapahoe	6.7%	24,801
+| County | Percentage of Votes | Total # of Votes |
+| :---: | :---:| :---|
+| Jefferson	| 10.5%	| 38,855 |
+| :---: | :---:| :---|
+|Denver	| 82.8% | 306,055 |
+| :---: | :---:| :---|
+| Arapahoe | 6.7%	| 24,801|
 
 The following excerpt from the code was used to obtain the number of votes by county and as well as candidate votes with a simple modification of the keywords used for county vs candidate. 
 
