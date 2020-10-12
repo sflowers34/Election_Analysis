@@ -50,31 +50,32 @@ if county_name not in counties:
            counties.append(county_name)
             #Begin tracking the county's vote count.
             county_votes[county_name] = 0
-   # Add a vote to that county's vote count.
+   #Add a vote to that county's vote count.
             county_votes[county_name] += 1
             
 •	Denver had the largest number of votes at 306,055.
 
 •	Breakdown of votes each candidate received:
-| Candidate	| Percentage of Votes	| Total # of Votes |
-| Charles Casper Stockham	| 23%	| 85,213 |
-| Diana DeGette	| 73.8%	| 272,892 |
-| Raymon Anthony Doane | 3.1%	| 11,606 |
+| Candidate	              | Percentage of Votes	| Total # of Votes |
+------------------------------------------------------
+| Charles Casper Stockham	| 23%	                | 85,213           |
+| Diana DeGette	          | 73.8%	              | 272,892          |
+| Raymon Anthony Doane    |   3.1%	            | 11,606           |
 
 •	Diana DeGette won the election with 272,892 votes, which was 73.8% of the total votes tallied by all counties. 
 
 The following is an example of the code used to obtain the percentage of votes from each county.
-# Retrieve the county vote count.
+#Retrieve the county vote count.
 county_count = county_votes.get(county)
-# Calculate the percent of total votes for the county.
+#Calculate the percent of total votes for the county.
 county_percentage = float(county_count) / float(total_votes) * 100
 county_results = (f"{county_name}: {county_percentage:.1f}% ({county_count:,})\n")
 
-#  Print the county results to the terminal.
+#Print the county results to the terminal.
 print(county_results)
-# Save the county votes to a text file.
+#Save the county votes to a text file.
 txt_file.write(county_results)
-#  Write a decision statement to determine the winning county and get its vote count.
+#Write a decision statement to determine the winning county and get its vote count.
 if (county_count > largest_votes):
 largest_votes = county_count
 largest_turnout = county
